@@ -11,6 +11,9 @@ import CvsI from './CompositionVsInheritance/CvsI';
 import Ex1 from './CompositionVsInheritance/Ex1';
 import Ex2 from './CompositionVsInheritance/Ex2';
 import Ex3 from './CompositionVsInheritance/Ex3';
+import Header from './Container/Header';
+import Auth from './Container/Auth';
+import {UserContextProvider} from "./context/userContext"; 
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
@@ -26,7 +29,7 @@ return (
       {/* <LiftingStateUp name={state.name}/>
       <Test name={state.name}/>
       <Employee/> */}
-      <CvsI/>
+      {/* <CvsI/>
       <hr/>
       <h2>sending data in function as props</h2>
       <Ex1/>
@@ -36,7 +39,12 @@ return (
       <hr/>
       <h2>sending component as props to another component which is inside a class or function</h2>
       <Ex3/>
-      <hr/>
+      <hr/> */}
+      <UserContextProvider>
+      <Header/>
+      <Auth/> 
+      </UserContextProvider>
+      {/* <LoginForm/> */}
     </div>
   )
 }
