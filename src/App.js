@@ -14,6 +14,9 @@ import Ex3 from './CompositionVsInheritance/Ex3';
 import Header from './Container/Header';
 import Auth from './Container/Auth';
 import {UserContextProvider} from "./context/userContext"; 
+import UserefEx1 from './useref/UserefEx1';
+import UserefEx2 from './useref/UserefEx2';
+import UserefEx3 from './useref/UserefEx3';
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
@@ -40,11 +43,16 @@ return (
       <h2>sending component as props to another component which is inside a class or function</h2>
       <Ex3/>
       <hr/> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
       <Header/>
       <Auth/> 
-      </UserContextProvider>
+      </UserContextProvider> */}
       {/* <LoginForm/> */}
+      <UserefEx1/>
+      <hr/>
+      <UserefEx2/>
+      <hr/>
+      <UserefEx3/>
     </div>
   )
 }
