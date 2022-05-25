@@ -13,16 +13,23 @@ import Ex2 from './CompositionVsInheritance/Ex2';
 import Ex3 from './CompositionVsInheritance/Ex3';
 import Header from './Container/Header';
 import Auth from './Container/Auth';
-import {UserContextProvider} from "./context/userContext"; 
+import { UserContextProvider } from "./context/userContext";
 import UserefEx1 from './useref/UserefEx1';
 import UserefEx2 from './useref/UserefEx2';
 import UserefEx3 from './useref/UserefEx3';
+import JSDom from './useref/JSDom'
+import Navbar from './MaterialCrud/Navbar';
+import AddUser from './MaterialCrud/AddUser';
+import Allusers from './MaterialCrud/Allusers';
+import HomeCrud from './MaterialCrud/HomeCrud';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import EditUser from './MaterialCrud/EditUser';
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
     name: "akash patel"
   }
-return (
+  return (
     <div>
       {/* <HookForm/> */}
       {/* <ListKeys arr = {arr}/> */}
@@ -48,11 +55,22 @@ return (
       <Auth/> 
       </UserContextProvider> */}
       {/* <LoginForm/> */}
-      <UserefEx1/>
+      {/* <UserefEx1/>
       <hr/>
       <UserefEx2/>
       <hr/>
       <UserefEx3/>
+      <hr />
+      <JSDom/> */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+         <Route path="/" element={<HomeCrud />} />
+         <Route path="/allUsers" element={<Allusers />} />
+         <Route path="/adduser" element={<AddUser />} />
+         <Route path="/edituser/:id" element={<EditUser />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

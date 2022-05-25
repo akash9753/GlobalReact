@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "fname": "akash",
+      "lname": "patel",
+      "email": "akash9753@gmail.com",
+      "gender": "male",
+      "mobile": "9753290759",
+      "state": "delhi",
+      "id": 1
+    },
+    {
+      "fname": "akash",
+      "lname": "patel",
+      "gender": "male",
+      "mobile": "9753290759",
+      "email": "akash9753@gmail.com",
+      "state": "Jharkhand",
+      "id": 3
+    },
+    {
+      "fname": "akash",
+      "lname": "patel",
+      "gender": "male",
+      "mobile": "9753290759",
+      "email": "akash9753@gmail.com",
+      "state": "Jharkhand",
+      "id": 4
+    },
+    {
+      "fname": "akash",
+      "lname": "patel",
+      "gender": "male",
+      "mobile": "9753290759",
+      "email": "akash9753@gmail.com",
+      "state": "Bihar",
+      "id": 5
+    },
+    {
+      "fname": "akash patel",
+      "lname": "patel",
+      "gender": "female",
+      "mobile": "9753290759",
+      "email": "akash9753@gmail.com",
+      "state": "Punjab",
+      "id": 6
+    },
+    {
+      "fname": "akash",
+      "lname": "dhoni",
+      "gender": "male",
+      "mobile": "9753290759",
+      "email": "akash1111@gmail.com",
+      "state": "Punjab",
+      "id": 7
+    }
+  ]
+}
