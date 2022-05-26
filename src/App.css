@@ -39,3 +39,8 @@
 .red{color:red}
 .green{color:green}
 .blue{color:blue}
+
+.section{
+  display: flex;
+  justify-content: space-around;
+}

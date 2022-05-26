@@ -10,9 +10,9 @@
       "id": 1
     },
     {
-      "fname": "akash",
-      "lname": "patel",
-      "gender": "male",
+      "fname": "akashpppp",
+      "lname": "patelppp",
+      "gender": "other",
       "mobile": "9753290759",
       "email": "akash9753@gmail.com",
       "state": "Jharkhand",
@@ -21,7 +21,7 @@
     {
       "fname": "akash",
       "lname": "patel",
-      "gender": "male",
+      "gender": "other",
       "mobile": "9753290759",
       "email": "akash9753@gmail.com",
       "state": "Jharkhand",
@@ -35,24 +35,6 @@
       "email": "akash9753@gmail.com",
       "state": "Bihar",
       "id": 5
-    },
-    {
-      "fname": "akash patel",
-      "lname": "patel",
-      "gender": "female",
-      "mobile": "9753290759",
-      "email": "akash9753@gmail.com",
-      "state": "Punjab",
-      "id": 6
-    },
-    {
-      "fname": "akash",
-      "lname": "dhoni",
-      "gender": "male",
-      "mobile": "9753290759",
-      "email": "akash1111@gmail.com",
-      "state": "Punjab",
-      "id": 7
     }
   ]
 }

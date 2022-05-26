@@ -24,13 +24,17 @@ import Allusers from './MaterialCrud/Allusers';
 import HomeCrud from './MaterialCrud/HomeCrud';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import EditUser from './MaterialCrud/EditUser';
+import SearchUsers from './higherOrderComponent/Users';
+import TodoList from './higherOrderComponent/TodoList';
+import Users from './higherOrderComponent/Users';
+import SearchTodos from './higherOrderComponent/TodoList';
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
     name: "akash patel"
   }
   return (
-    <div>
+    <div className="app">
       {/* <HookForm/> */}
       {/* <ListKeys arr = {arr}/> */}
       {/* <ListKeys/> */}
@@ -62,7 +66,7 @@ function App() {
       <UserefEx3/>
       <hr />
       <JSDom/> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
          <Route path="/" element={<HomeCrud />} />
@@ -70,7 +74,12 @@ function App() {
          <Route path="/adduser" element={<AddUser />} />
          <Route path="/edituser/:id" element={<EditUser />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <h2>Higher Order Component</h2>
+      <div className='section'>
+      <div><SearchUsers/></div>
+      <div><SearchTodos/></div>
+      </div>
     </div>
   )
 }
