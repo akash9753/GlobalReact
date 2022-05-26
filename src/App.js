@@ -28,6 +28,12 @@ import SearchUsers from './higherOrderComponent/Users';
 import TodoList from './higherOrderComponent/TodoList';
 import Users from './higherOrderComponent/Users';
 import SearchTodos from './higherOrderComponent/TodoList';
+import Jsx from './JsxInReact/Jsx';
+import Jsx2 from './JsxInReact/Jsx2';
+import Jsx3 from './JsxInReact/Jsx3';
+import Jsx4 from './JsxInReact/Jsx4';
+import JsxFragment1 from './JsxInReact/JsxFragment1';
+import JsxFragment2 from './JsxInReact/JsxFragment2';
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
@@ -75,11 +81,17 @@ function App() {
          <Route path="/edituser/:id" element={<EditUser />} />
         </Routes>
       </BrowserRouter> */}
-      <h2>Higher Order Component</h2>
+      {/* <h2>Higher Order Component</h2>
       <div className='section'>
       <div><SearchUsers/></div>
       <div><SearchTodos/></div>
-      </div>
+      </div> */}
+      <Jsx/>
+      <Jsx2/>
+      <Jsx3/>
+      <Jsx4/>
+      <JsxFragment1/>
+      
     </div>
   )
 }
