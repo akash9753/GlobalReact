@@ -34,6 +34,8 @@ import Jsx3 from './JsxInReact/Jsx3';
 import Jsx4 from './JsxInReact/Jsx4';
 import JsxFragment1 from './JsxInReact/JsxFragment1';
 import JsxFragment2 from './JsxInReact/JsxFragment2';
+import PortalEx1 from './portals/PortalEx1';
+
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
@@ -86,11 +88,13 @@ function App() {
       <div><SearchUsers/></div>
       <div><SearchTodos/></div>
       </div> */}
-      <Jsx/>
+      {/* <Jsx/>
       <Jsx2/>
       <Jsx3/>
       <Jsx4/>
-      <JsxFragment1/>
+      <JsxFragment1/> */}
+      <PortalEx1/>
+      
       
     </div>
   )

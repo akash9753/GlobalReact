@@ -3,7 +3,7 @@ import JsxFragment2 from './JsxFragment2';
 
 const JsxFragment1 = () => {
     return (
-        <div>
+        <>
             <h1>React Fragment</h1>
             <table>
                 <tbody>
@@ -12,7 +12,7 @@ const JsxFragment1 = () => {
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </>
     );
 };
 
