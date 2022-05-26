@@ -35,7 +35,7 @@ import Jsx4 from './JsxInReact/Jsx4';
 import JsxFragment1 from './JsxInReact/JsxFragment1';
 import JsxFragment2 from './JsxInReact/JsxFragment2';
 import PortalEx1 from './portals/PortalEx1';
-
+import ProfilerEx1 from './Profiler/ProfilerEx1';
 function App() {
   // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const state = {
@@ -74,7 +74,7 @@ function App() {
       <UserefEx3/>
       <hr />
       <JSDom/> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
          <Route path="/" element={<HomeCrud />} />
@@ -82,7 +82,7 @@ function App() {
          <Route path="/adduser" element={<AddUser />} />
          <Route path="/edituser/:id" element={<EditUser />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* <h2>Higher Order Component</h2>
       <div className='section'>
       <div><SearchUsers/></div>
@@ -93,8 +93,8 @@ function App() {
       <Jsx3/>
       <Jsx4/>
       <JsxFragment1/> */}
-      <PortalEx1/>
-      
+    {/* <PortalEx1/> */}
+      {/* <ProfilerEx1/> */}
       
     </div>
   )
