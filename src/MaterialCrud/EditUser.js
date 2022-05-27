@@ -24,7 +24,7 @@ function EditUser() {
 
   const navigate = useNavigate();
   const { id } = useParams();
-
+  console.log(id);
   // console.log(errors);
 
     useEffect(() => {
@@ -36,11 +36,18 @@ function EditUser() {
   }, [user]);
 
   const getUserData = async () => {
+    console.log(id);
     let response = await getUser(id);
-    console.log(response.data);
-    setUser(response.data);
+    console.log(response.data.data);
+    setUser(response.data.data);
   };
   console.log(user);
+  // console.log(user.data.fname);
+  // console.log(user.data.lname);
+  // console.log(user.data.gender);
+  // console.log(user.data.email);
+  // console.log(user.data.mobile);
+  // console.log(user.data.state);
   const {
     register,
     handleSubmit,

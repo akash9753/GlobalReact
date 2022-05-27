@@ -27,7 +27,7 @@ const TBody = styled(TableRow)`
 
 const Allusers = () => {
     const [users, setUsers] = useState([])
-
+    
     useEffect(() => {
         getUserDetails();
     }, [])
@@ -35,7 +35,7 @@ const Allusers = () => {
     const getUserDetails = async () => {
         let response = await getUsers();
         console.log(response);
-        setUsers(response.data)
+        setUsers(response.data.data)
     }
 
     const deleteUserById = async (id)=>{
@@ -63,10 +63,10 @@ const Allusers = () => {
             </TableHead>
             <TableBody>
                 {
-                    users.map((user) => {
+                    users.map((user,index) => {
                         return (
                             <TBody key={user.id}>
-                                <TableCell>{user.id}</TableCell>
+                                <TableCell>{index+1}</TableCell>
                                 <TableCell>{user.fname}</TableCell>
                                 <TableCell>{user.lname}</TableCell>
                                 <TableCell>{user.gender}</TableCell>
@@ -74,8 +74,8 @@ const Allusers = () => {
                                 <TableCell>{user.mobile}</TableCell>
                                 <TableCell>{user.state}</TableCell>
                                 <TableCell>
-                          <Button variant="contained" style={{marginRight:10}} component={Link} to={`/edituser/${user.id}`}>Edit</Button>
-                          <button type="button" className="btn btn-danger" onClick={()=>deleteUserById(user.id)}>Delete</button>
+                          <Button variant="contained" style={{marginRight:10}} component={Link} to={`/edituser/${user._id}`}>Edit</Button>
+                          <button type="button" className="btn btn-danger" onClick={()=>deleteUserById(user._id)}>Delete</button>
                     </TableCell>
                             </TBody>
                         )

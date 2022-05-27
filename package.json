@@ -26,7 +26,6 @@
   "scripts": {
     "start": "react-scripts start",
     "json-server":"json-server --watch src/database/db.json --host 127.0.0.1 --port 3002",
-    "start:dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,3 +50,4 @@
     ]
   }
 }
+
