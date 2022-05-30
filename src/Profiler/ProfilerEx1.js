@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ProfilerEx1 = () => {
+    let [count, setCount] = useState(0);
+    const Increase=(()=>{
+         setCount(count++)
+    })
     return (
-        <div>
-            Profiler
-        </div>
+
+        <>
+            <div>{count}</div>
+            <button onClick={()=>Increase()}>Increase</button>
+        </>
     );
 };
 

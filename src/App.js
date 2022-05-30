@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Profiler} from 'react';
 import './App.css';
 import LiftingStateUp from './LiftingStateUp1/LiftingStateUp';
 // import HookForm from './react-hook-form/HookForm';
@@ -41,6 +41,17 @@ function App() {
   const state = {
     name: "akash patel"
   }
+  var onRenderCallback = (
+    id, 
+    phase, 
+    actualDuration,
+    baseDuration, 
+    startTime, 
+    commitTime, 
+    interactions 
+  )=> {
+    console.log(id,phase,startTime,commitTime);
+  }
   return (
     <div className="app">
       {/* <HookForm/> */}
@@ -74,7 +85,7 @@ function App() {
       <UserefEx3/>
       <hr />
       <JSDom/> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
          <Route path="/" element={<HomeCrud />} />
@@ -82,7 +93,7 @@ function App() {
          <Route path="/adduser" element={<AddUser />} />
          <Route path="/edituser/:id" element={<EditUser />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <h2>Higher Order Component</h2>
       <div className='section'>
       <div><SearchUsers/></div>
@@ -93,9 +104,9 @@ function App() {
       <Jsx3/>
       <Jsx4/>
       <JsxFragment1/> */}
-    {/* <PortalEx1/> */}
-      {/* <ProfilerEx1/> */}
-      
+      <Profiler id='profiler' onRender={onRenderCallback}>
+      <ProfilerEx1/>
+      </Profiler>
     </div>
   )
 }
