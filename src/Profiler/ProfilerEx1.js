@@ -8,6 +8,7 @@ const ProfilerEx1 = () => {
     return (
 
         <>
+           <div>Profiler Demo</div>
             <div>{count}</div>
             <button onClick={()=>Increase()}>Increase</button>
         </>

@@ -106,6 +106,7 @@ function App() {
       <JsxFragment1/> */}
       <Profiler id='profiler' onRender={onRenderCallback}>
       <ProfilerEx1/>
+      
       </Profiler>
     </div>
   )
